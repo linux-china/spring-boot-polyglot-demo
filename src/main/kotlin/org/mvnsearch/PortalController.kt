@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.RestController
  *
  * @author linux_china
  */
-
 @RestController
 class CustomerController {
+    
     @RequestMapping("/")
-
     fun index(): String {
         return "good"
     }
