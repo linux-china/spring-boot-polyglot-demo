@@ -8,10 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
  *
  * @author linux_china
  */
-
 @SpringBootApplication
 open class DemoApplication {
-    fun main(args: Array<String>) {
-        SpringApplication.run(DemoApplication::class.java, *args)
+    companion object {
+        @JvmStatic fun main(args: Array<String>) {
+            SpringApplication.run(DemoApplication::class.java, *args)
+        }
     }
+
 }
