@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.3.RELEASE</version>
+        <version>1.5.1.RELEASE</version>
         <relativePath/>
     </parent>
 
@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <kotlin.version>1.0.6</kotlin.version>
+        <kotlin.version>1.1.0-rc-91</kotlin.version>
         <start-class>org.mvnsearch.DemoApplication</start-class>
     </properties>
 
@@ -62,14 +62,35 @@
                 <executions>
                     <execution>
                         <id>compile</id>
-                        <phase>process-sources</phase>
                         <goals>
                             <goal>compile</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>test-compile</id>
+                        <goals>
+                            <goal>test-compile</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>kotlin-milestone</id>
+            <name>kotlin</name>
+            <url>http://dl.bintray.com/kotlin/kotlin-eap-1.1</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>kotlin-milestone</id>
+            <name>kotlin</name>
+            <url>http://dl.bintray.com/kotlin/kotlin-eap-1.1</url>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
