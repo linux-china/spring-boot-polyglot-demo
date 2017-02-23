@@ -8,6 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
  *
  * @author linux_china
  */
+
+var running: Boolean = true
+
 @SpringBootApplication
 open class DemoApplication {
 
