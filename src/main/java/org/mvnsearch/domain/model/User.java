@@ -1,4 +1,4 @@
-package org.mvnsearch;
+package org.mvnsearch.domain.model;
 
 import java.io.Serializable;
 
