@@ -1,5 +1,6 @@
-package org.mvnsearch;
+package org.mvnsearch.domain.service;
 
+import org.mvnsearch.PurchaseOrder;
 import org.springframework.stereotype.Service;
 
 /**

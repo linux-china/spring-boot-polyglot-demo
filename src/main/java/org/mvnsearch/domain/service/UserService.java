@@ -1,4 +1,6 @@
-package org.mvnsearch;
+package org.mvnsearch.domain.service;
+
+import org.mvnsearch.PurchaseOrder;
 
 /**
  * user service
