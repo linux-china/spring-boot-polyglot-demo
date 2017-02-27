@@ -1,6 +1,8 @@
 package org.mvnsearch
 
 import org.junit.Test
+import org.mvnsearch.domain.DemoAppContext
+import org.mvnsearch.domain.model.User
 
 /**
  * Kotlin basic test
@@ -11,6 +13,9 @@ import org.junit.Test
 fun String.print() {
     println(this)
 }
+
+val Int.user: User?
+    get() = DemoAppContext.userRepository.findOne(this)
 
 class KotlinBasicTest {
 
