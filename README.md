@@ -5,6 +5,8 @@ Spring boot application with Kotlin.
 ### Examples
 
 * Integrate with Java 8 and Lombok
+* Mix Java and Kotlin compile
+* Groovy support
 * DSL Examples
 
 
