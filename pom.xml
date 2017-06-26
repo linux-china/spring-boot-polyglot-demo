@@ -16,11 +16,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
-        <kotlin.version>1.1.2-5</kotlin.version>
+        <kotlin.version>1.1.3</kotlin.version>
         <start-class>org.mvnsearch.DemoApplicationKt</start-class>
     </properties>
 
-    <dependencies>
+    <dependencies>                
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
