@@ -13,6 +13,9 @@ class HelpController {
 
   @GetMapping("/help")
   public String help() {
-    return "help"
+    Person person = new Person()
+    person.setId(1)
+    person.setNick("Jacky")
+    return person.toString()
   }
 }
