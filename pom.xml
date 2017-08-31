@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-boot.version>1.5.6.RELEASE</spring-boot.version>
-        <kotlin.version>1.1.4</kotlin.version>
+        <kotlin.version>1.1.4-3</kotlin.version>
         <kotlinx.html.version>0.6.3</kotlinx.html.version>
         <start-class>org.mvnsearch.DemoApplication</start-class>
     </properties>
