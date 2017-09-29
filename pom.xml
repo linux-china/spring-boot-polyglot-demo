@@ -15,8 +15,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>1.5.7.RELEASE</spring-boot.version>
-        <kotlin.version>1.1.4-3</kotlin.version>
+        <spring.version>5.0.0.RELEASE</spring.version>
+        <spring-boot.version>1.4.7.RELEASE</spring-boot.version>
+        <kotlin.version>1.1.50</kotlin.version>
         <kotlinx.html.version>0.6.3</kotlinx.html.version>
         <start-class>org.mvnsearch.DemoApplication</start-class>
     </properties>
@@ -65,6 +66,12 @@
             <version>${kotlinx.html.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>atomicfu</artifactId>
+            <version>0.7</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>io.kotlintest</groupId>
             <artifactId>kotlintest</artifactId>
             <version>2.0.3</version>
@@ -79,6 +86,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
