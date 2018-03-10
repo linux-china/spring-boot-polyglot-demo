@@ -1,5 +1,6 @@
 package org.mvnsearch
 
+import com.fasterxml.jackson.annotation.JsonProperty
 import org.springframework.stereotype.Component
 
 /**
@@ -7,10 +8,13 @@ import org.springframework.stereotype.Component
  *
  * @author linux_china
  */
-
 class Person {
+    @JsonProperty("ID")
     var id: Int? = null
     var nick: String? = null
+    var age: Int? = null
+    var status: Int? = null
+    var password: String? = null;
 }
 
 interface PersonRepository {
@@ -40,3 +44,18 @@ open class PersonRepositoryImpl : PersonRepository {
         TODO("not implemented")
     }
 }
+
+
+//----- extensions ----- //
+fun Person.save() {
+    this.age;
+}
+
+fun Person.changePassword(newPassword: String) {
+
+}
+
+val Int.person: Person
+    get() {
+        return Person().apply { id = this@person }
+    }
