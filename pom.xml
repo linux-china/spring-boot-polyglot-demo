@@ -15,11 +15,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring.version>4.3.18.RELEASE</spring.version>
-        <spring-boot.version>1.5.14.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
         <kotlin.version>1.2.51</kotlin.version>
-        <kotlinx.html.version>0.6.10</kotlinx.html.version>
-        <serialization.version>0.5.1</serialization.version>
+        <kotlinx.html.version>0.6.11</kotlinx.html.version>
+        <serialization.version>0.6.0</serialization.version>
         <start-class>org.mvnsearch.DemoApplication</start-class>
     </properties>
 
@@ -157,13 +156,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-framework-bom</artifactId>
-                <version>${spring.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
