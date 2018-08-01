@@ -1,6 +1,6 @@
 Spring Boot Application with Kotlin
 ===================================
-Spring boot application with Kotlin.
+Spring Boot application with Kotlin.
 
 ### Examples
 
