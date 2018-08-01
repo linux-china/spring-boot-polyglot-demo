@@ -15,8 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
-        <kotlin.version>1.2.51</kotlin.version>
+        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
+        <kotlin.version>1.2.60</kotlin.version>
         <kotlinx.html.version>0.6.11</kotlinx.html.version>
         <serialization.version>0.6.0</serialization.version>
         <start-class>org.mvnsearch.DemoApplication</start-class>
@@ -237,7 +237,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
