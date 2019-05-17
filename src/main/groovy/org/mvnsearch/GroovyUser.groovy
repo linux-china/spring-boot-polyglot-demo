@@ -5,7 +5,7 @@ package org.mvnsearch
  *
  * @author linux_china
  */
-class GroovyPerson {
+class GroovyUser {
   Integer id
   String name;
 }
