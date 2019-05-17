@@ -9,11 +9,8 @@ import org.springframework.boot.runApplication
  * @author linux_china
  */
 @SpringBootApplication
-class DemoApplication {
-    companion object {
-        @JvmStatic
-        fun main(args: Array<String>) {
-            runApplication<DemoApplication>(*args)
-        }
-    }
+class DemoApplication
+
+fun main(args: Array<String>) {
+    runApplication<DemoApplication>(*args)
 }
