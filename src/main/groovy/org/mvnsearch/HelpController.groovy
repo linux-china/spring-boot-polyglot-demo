@@ -1,6 +1,7 @@
 package org.mvnsearch
 
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 /**
@@ -9,13 +10,14 @@ import org.springframework.web.bind.annotation.RestController
  * @author linux_china
  */
 @RestController
+@RequestMapping("/groovy")
 class HelpController {
 
-  @GetMapping("/help")
-  public String help() {
+  @GetMapping("/user")
+  Person help() {
     Person person = new Person()
     person.setId(1)
     person.setNick("Jacky")
-    return person.toString()
+    return person
   }
 }
