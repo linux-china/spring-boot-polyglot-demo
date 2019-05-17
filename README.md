@@ -1,6 +1,6 @@
-Spring Boot Application with Kotlin, Java + Lombok + Groovy
-===========================================================
-Spring Boot application with Kotlin, Java + Lombok, Groovy and make them interoperable.
+Spring Boot Polyglot with Kotlin, Java + Lombok + Groovy
+========================================================
+Spring Boot polyglot with Kotlin, Java + Lombok, Groovy and make them interoperable.
 
 ### Examples
 
