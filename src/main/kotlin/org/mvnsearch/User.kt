@@ -1,14 +1,9 @@
 package org.mvnsearch
 
-import kotlinx.serialization.Optional
-import kotlinx.serialization.SerialId
-import kotlinx.serialization.Serializable
-
 /**
- * user data class for serialization
+ * user data class
  *
  * @author linux_china
  */
 
-@Serializable
-data class User(@SerialId(id = 1) val id: Int, @SerialId(id = 2) @Optional val nick: String = "")
+data class User(val id: Int, val nick: String = "")
