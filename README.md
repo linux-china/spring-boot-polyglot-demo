@@ -1,12 +1,12 @@
 Spring Boot Polyglot with Kotlin, Java + Lombok + Groovy
 ========================================================
-Spring Boot polyglot with Kotlin, Java + Lombok, Groovy and make them interoperable.
+Spring Boot 2.2 polyglot with Kotlin, Java + Lombok, Groovy and make them interoperable.
 
 ### Examples
 
 * Integrate with Java 8 and Lombok
 * Mix Java and Kotlin compile
-* Groovy support
+* Groovy 3 support
 * DSL Examples
 
 
