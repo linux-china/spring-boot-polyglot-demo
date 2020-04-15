@@ -11,7 +11,6 @@ import org.springframework.context.ApplicationContextAware;
  *
  * @author linux_china
  */
-@SuppressWarnings("NullableProblems")
 public class DemoAppContext implements ApplicationContextAware {
 
     @NotNull
