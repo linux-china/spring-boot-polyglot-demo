@@ -1,6 +1,6 @@
 package org.mvnsearch
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 /**
  * kotlin test
@@ -12,6 +12,10 @@ class KotlinTest {
 
     @Test
     fun spike() {
+        val user = GroovyUser()
+        user.id = 1;
+        user.name = "good";
+        println(user.name)
         println(getNick(1))
     }
 

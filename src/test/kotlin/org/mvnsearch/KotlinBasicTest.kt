@@ -1,6 +1,6 @@
 package org.mvnsearch
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import org.mvnsearch.domain.DemoAppContext
 import org.mvnsearch.domain.model.User
 
