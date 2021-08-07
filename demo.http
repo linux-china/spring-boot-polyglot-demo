@@ -1,3 +1,4 @@
 GET http://localhost:8080/groovy/user
 
-###
+### welcome
+GET http://localhost:8080/welcome
