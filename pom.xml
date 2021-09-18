@@ -15,12 +15,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.5.3</spring-boot.version>
-        <kotlin.version>1.5.21</kotlin.version>
-        <groovy.version>3.0.8</groovy.version>
+        <spring-boot.version>2.5.4</spring-boot.version>
+        <kotlin.version>1.5.30</kotlin.version>
+        <groovy.version>3.0.9</groovy.version>
         <kotlinx.html.version>0.7.3</kotlinx.html.version>
         <start-class>org.mvnsearch.DemoApplicationKt</start-class>
-        <junit5.version>5.7.2</junit5.version>
+        <junit5.version>5.8.0</junit5.version>
     </properties>
 
     <dependencies>
