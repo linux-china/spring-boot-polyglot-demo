@@ -15,12 +15,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.5.4</spring-boot.version>
-        <kotlin.version>1.5.30</kotlin.version>
-        <groovy.version>3.0.9</groovy.version>
-        <kotlinx.html.version>0.7.3</kotlinx.html.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <spring-boot.version>2.7.2</spring-boot.version>
+        <kotlin.version>1.7.10</kotlin.version>
+        <groovy.version>3.0.12</groovy.version>
+        <kotlinx.html.version>0.8.0</kotlinx.html.version>
         <start-class>org.mvnsearch.DemoApplicationKt</start-class>
-        <junit5.version>5.8.0</junit5.version>
+        <junit5.version>5.8.2</junit5.version>
     </properties>
 
     <dependencies>
@@ -38,7 +40,9 @@
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy</artifactId>
+            <artifactId>groovy-all</artifactId>
+            <version>3.0.12</version>
+            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
@@ -175,7 +179,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <jvmTarget>1.8</jvmTarget>
+                    <jvmTarget>${java.version}</jvmTarget>
                     <compilerPlugins>
                         <plugin>spring</plugin>
                     </compilerPlugins>
@@ -191,10 +195,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.10.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
                     <parameters>true</parameters>
                 </configuration>
                 <executions>
@@ -227,7 +229,7 @@
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.12.1</version>
+                <version>1.13.1</version>
                 <executions>
                     <execution>
                         <goals>
