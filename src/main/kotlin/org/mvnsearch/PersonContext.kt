@@ -29,6 +29,7 @@ interface PersonRepository {
 @Component
 open class PersonRepositoryImpl : PersonRepository {
 
+    @Deprecated("Please use findOne", replaceWith = ReplaceWith("findOne(id)"))
     override fun findById(id: Int): Person {
         TODO("not implemented")
     }
